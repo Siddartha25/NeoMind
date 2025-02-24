@@ -62,17 +62,14 @@ graph_object = graph_handler.get_or_create_graph(COMPANY_NAME)
 knowledge_sentences = [
     "The latest release version of ABC Corp is 7.1.2, which was released in January 2021.",
     "Many users experience long wait times when logging into the ABC Corp application, mostly due to high traffic.",
-    "Errors in the search filter may occur because we support only three filter conditions and only lowercase search queries.",
     "ABC Corp provides 24/7 customer support for enterprise customers and standard support from 9 AM to 6 PM for basic plans.",
     "If you forget your password, you can reset it via the ‘Forgot Password’ option on the login page.",
-    "Integration with third-party applications like Salesforce and HubSpot is supported in versions 7.0 and above.",
     "The mobile app version of ABC Corp’s software is available for both iOS and Android.",
     "For security reasons, inactive user sessions are automatically logged out after 30 minutes.",
     "Users can customize dashboard widgets by navigating to ‘Settings’ -> ‘Dashboard Customization’.",
     "The system supports exporting reports in CSV, PDF, and Excel formats.",
     "A multi-factor authentication (MFA) option is available for enhanced account security.",
     "Users experiencing billing issues should contact billing@abccorp.com for assistance.",
-    "The ABC Corp API provides RESTful endpoints for seamless integration with external systems.",
 ]
 
 # Insert sentences into the knowledge graph

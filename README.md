@@ -22,10 +22,14 @@ One of the most powerful features of NeoMind is its ability to learn from past q
 - ### Customizable Chatbot Personality
 NeoMind takes chatbot customization further by allowing users to define a personality for their chatbot. Whether it needs to be formal and professional for enterprise applications or casual and engaging for social interactions, the chatbot’s personality can be tailored to the specific needs of the business.
 
-#Using NeoMind
-1. Installing NeoMind
-   `pip install NeoMind`
-   `python -m spacy download en_core_web_md`
+# Using NeoMind
+
+## 1. Installing NeoMind
+To install NeoMind, run the following commands:
+```sh
+pip install NeoMind
+python -m spacy download en_core_web_md
+
 
 ## Why NeoMind?
 NeoMind offers a smart prompt-engineering approach that combines cutting-edge LLM capabilities with structured knowledge retrieval, making it a powerful and scalable solution for creating intelligent, context-aware, and reliable chatbots. With its ability to integrate knowledge graphs, retrieve similar past queries, and adapt its personality, NeoMind stands out as a practical framework for businesses looking to enhance their automated support and conversational AI solutions.

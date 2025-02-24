@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: NeoMind
+Version: 0.1.0
+Summary: Create your own custom AI chatbot package using Groq and Neo4j for knowledge-based responses.
+Home-page: https://github.com/Siddartha25/NeoAgent
+Author: Siddartha Galipelli
+Author-email: respectsiddartha@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: spacy
+Requires-Dist: neo4j
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: groq
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

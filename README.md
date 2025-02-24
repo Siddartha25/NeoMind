@@ -30,6 +30,9 @@ To install NeoMind, run the following commands:
 pip install NeoMind
 python -m spacy download en_core_web_md
 ```
+## 2. Get a Free API Key
+To use NeoMind, you need an API key for accessing Groq's language model.
+Visit [Groq](https://groq.com/) to sign up and obtain a free API key.
 
 ## Why NeoMind?
 NeoMind offers a smart prompt-engineering approach that combines cutting-edge LLM capabilities with structured knowledge retrieval, making it a powerful and scalable solution for creating intelligent, context-aware, and reliable chatbots. With its ability to integrate knowledge graphs, retrieve similar past queries, and adapt its personality, NeoMind stands out as a practical framework for businesses looking to enhance their automated support and conversational AI solutions.

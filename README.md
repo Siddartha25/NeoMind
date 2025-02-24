@@ -11,7 +11,7 @@ To overcome this challenge, businesses need a framework that bridges the gap bet
 
 # Introducing NeoMind
 NeoMind is designed as a flexible and intuitive framework that enables users to create custom chatbots with ease. The core idea behind NeoMind is to enhance LLM-based chatbots with domain-specific knowledge and a distinct personality to align with the needs of different applications.
-![alt text](https://github.com/Siddartha25/NeoMind/blob/Neomind.png?raw=true)
+![alt text](https://github.com/Siddartha25/NeoMind/blob/main/Neomind.png?raw=true)
 ## How NeoMind Works
 - ### Leveraging Knowledge Graphs for Contextual Understanding
 NeoMind utilizes Knowledge Graphs (KGs) to store structured knowledge that the chatbot can reference. This allows for precise context retrieval by finding relevant information based on semantic similarity between incoming user queries and existing knowledge. Instead of relying solely on an LLM’s pre-trained data, NeoMind dynamically supplies contextual information to the model, ensuring more accurate and relevant responses.

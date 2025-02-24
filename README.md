@@ -12,15 +12,15 @@ To overcome this challenge, businesses need a framework that bridges the gap bet
 # Introducing NeoMind
 NeoMind is designed as a flexible and intuitive framework that enables users to create custom chatbots with ease. The core idea behind NeoMind is to enhance LLM-based chatbots with domain-specific knowledge and a distinct personality to align with the needs of different applications.
 
-#How NeoMind Works
-##Leveraging Knowledge Graphs for Contextual Understanding
+## How NeoMind Works
+- ### Leveraging Knowledge Graphs for Contextual Understanding
 NeoMind utilizes Knowledge Graphs (KGs) to store structured knowledge that the chatbot can reference. This allows for precise context retrieval by finding relevant information based on semantic similarity between incoming user queries and existing knowledge. Instead of relying solely on an LLM’s pre-trained data, NeoMind dynamically supplies contextual information to the model, ensuring more accurate and relevant responses.
 
-##Enhancing Responses with Similar Past Queries
+- ### Enhancing Responses with Similar Past Queries
 One of the most powerful features of NeoMind is its ability to learn from past queries and resolved issues. By storing previous solutions in the form of knowledge, the chatbot can retrieve and reuse information from similar past cases, significantly improving efficiency in handling repetitive or related queries. This makes it particularly useful for customer support, where similar problems frequently arise, and solutions can be automatically suggested based on prior cases.
 
-##Customizable Chatbot Personality
+- ### Customizable Chatbot Personality
 NeoMind takes chatbot customization further by allowing users to define a personality for their chatbot. Whether it needs to be formal and professional for enterprise applications or casual and engaging for social interactions, the chatbot’s personality can be tailored to the specific needs of the business.
 
-#Why NeoMind?
+## Why NeoMind?
 NeoMind offers a smart prompt-engineering approach that combines cutting-edge LLM capabilities with structured knowledge retrieval, making it a powerful and scalable solution for creating intelligent, context-aware, and reliable chatbots. With its ability to integrate knowledge graphs, retrieve similar past queries, and adapt its personality, NeoMind stands out as a practical framework for businesses looking to enhance their automated support and conversational AI solutions.

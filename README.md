@@ -40,5 +40,79 @@ Visit [Neo4j Aura](https://neo4j.com/product/auradb/) to sign up and create a ne
 
 ## 4. Create a chatbot
 
+```
+from NeoMind import Chat, Neo4jHandler
+
+# Neo4j Database Configuration
+NEO4J_URI = ""
+NEO4J_USERNAME = "neo4j"
+NEO4J_PASSWORD = ""
+
+# Initialize Neo4j Handler
+graph_handler = Neo4jHandler(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
+
+# Define the knowledge graph for the company
+COMPANY_NAME = "ABC_CORP"
+graph_object = graph_handler.get_or_create_graph(COMPANY_NAME)
+
+# Add relevant knowledge base sentences to the graph
+knowledge_sentences = [
+    "The latest release version of ABC Corp is 7.1.2, which was released in January 2021.",
+    "Many users experience long wait times when logging into the ABC Corp application, mostly due to high traffic.",
+    "Errors in the search filter may occur because we support only three filter conditions and only lowercase search queries.",
+    "ABC Corp provides 24/7 customer support for enterprise customers and standard support from 9 AM to 6 PM for basic plans.",
+    "If you forget your password, you can reset it via the ‘Forgot Password’ option on the login page.",
+    "Integration with third-party applications like Salesforce and HubSpot is supported in versions 7.0 and above.",
+    "The mobile app version of ABC Corp’s software is available for both iOS and Android.",
+    "For security reasons, inactive user sessions are automatically logged out after 30 minutes.",
+    "Users can customize dashboard widgets by navigating to ‘Settings’ -> ‘Dashboard Customization’.",
+    "The system supports exporting reports in CSV, PDF, and Excel formats.",
+    "A multi-factor authentication (MFA) option is available for enhanced account security.",
+    "Users experiencing billing issues should contact billing@abccorp.com for assistance.",
+    "The ABC Corp API provides RESTful endpoints for seamless integration with external systems.",
+]
+
+# Insert sentences into the knowledge graph
+graph_handler.add_sentences_to_graph(COMPANY_NAME, knowledge_sentences)
+
+# Initialize Chatbot with API Key
+GROQ_API_KEY = ""
+chat_handler = Chat(GROQ_API_KEY)
+
+# Define chatbot personality
+chatbot_personality = [
+    "You are a professional customer support executive for ABC Corp, a company that provides software solutions for managing customer data.",
+    "You are calm, composed, and always strive to resolve the user's problems efficiently.",
+    "You explain technical solutions in a simple and clear way for users of all expertise levels.",
+    "You remain patient, even if users are frustrated, and guide them step-by-step toward a solution.",
+    "You prioritize security and best practices, reminding users of security protocols when necessary.",
+    "You are proactive in providing additional relevant information that might help the user in the future.",
+    "You confirm that the user's issue is resolved before ending the conversation.",
+]
+
+# Set chatbot personality
+chat_handler.set_personality(chatbot_personality)
+
+# Interactive Chat Loop
+print("\nWelcome to ABC Corp Customer Support Chatbot!")
+print("Type your query below (or type 'exit' to quit):\n")
+
+while True:
+    user_query = input("User: ")
+    
+    if user_query.lower() in ["exit", "quit"]:
+        print("Exiting chatbot. Have a great day!")
+        break
+
+    # Retrieve contextually relevant information from the knowledge graph
+    similar_sentences = graph_handler.get_similar_sentences(COMPANY_NAME, user_query, similarity_threshold=0.7)
+
+    # Generate a response using the chatbot
+    chatbot_response = chat_handler.chat_with_groq_KG(user_query, similar_sentences)
+
+    print(f"Chatbot: {chatbot_response}\n")
+
+```
+
 ## Why NeoMind?
 NeoMind offers a smart prompt-engineering approach that combines cutting-edge LLM capabilities with structured knowledge retrieval, making it a powerful and scalable solution for creating intelligent, context-aware, and reliable chatbots. With its ability to integrate knowledge graphs, retrieve similar past queries, and adapt its personality, NeoMind stands out as a practical framework for businesses looking to enhance their automated support and conversational AI solutions.

@@ -36,7 +36,7 @@ Visit [Groq](https://groq.com/) to sign up and obtain a free API key.
 
 ## 3. Create your knowledge graph
 NeoMind uses Neo4j for knowledge graphs, you need an URI of an knowledge graph instance for using NeoMind.
-Visit [Neo4j aura]([https://groq.com/](https://neo4j.com/product/auradb/)) to sign up and create a new instance and obtain URI.
+Visit [Neo4j Aura]((https://neo4j.com/product/auradb/)) to sign up and create a new instance and obtain URI.
 
 ## 4. Create a chatbot
 

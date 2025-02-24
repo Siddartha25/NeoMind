@@ -26,7 +26,7 @@ NeoMind takes chatbot customization further by allowing users to define a person
 
 ## 1. Installing NeoMind
 To install NeoMind, run the following commands:
-```
+```python
 pip install NeoMind
 python -m spacy download en_core_web_md
 ```
@@ -40,7 +40,7 @@ Visit [Neo4j Aura](https://neo4j.com/product/auradb/) to sign up and create a ne
 
 ## 4. Create a chatbot
 
-```
+```python
 from NeoMind import Chat, Neo4jHandler
 
 # Neo4j Database Configuration

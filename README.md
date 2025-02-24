@@ -39,10 +39,13 @@ NeoMind uses Neo4j for knowledge graphs, you need an URI of an knowledge graph i
 Visit [Neo4j Aura](https://neo4j.com/product/auradb/) to sign up and create a new instance and obtain URI.
 
 ## 4. Create a chatbot
-
+- Importing 
 ```python
 from NeoMind import Chat, Neo4jHandler
+```
 
+- Setting up the knowldge graph and adding knowledge
+```python
 # Neo4j Database Configuration
 NEO4J_URI = ""
 NEO4J_USERNAME = "neo4j"
@@ -74,7 +77,9 @@ knowledge_sentences = [
 
 # Insert sentences into the knowledge graph
 graph_handler.add_sentences_to_graph(COMPANY_NAME, knowledge_sentences)
-
+```
+- Setting up the chatbot
+ ```python 
 # Initialize Chatbot with API Key
 GROQ_API_KEY = ""
 chat_handler = Chat(GROQ_API_KEY)
@@ -92,7 +97,9 @@ chatbot_personality = [
 
 # Set chatbot personality
 chat_handler.set_personality(chatbot_personality)
-
+```
+- Putting it together
+```python
 # Interactive Chat Loop
 print("\nWelcome to ABC Corp Customer Support Chatbot!")
 print("Type your query below (or type 'exit' to quit):\n")
